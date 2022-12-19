@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@sveltejs/vite-plugin-svelte': ^1.1.0
   '@tsconfig/svelte': ^3.0.0
+  sudoku-solver-js: ^0.1.4
   sudoku-umd: ^1.0.1
   svelte: ^3.52.0
   svelte-check: ^2.9.2
@@ -12,6 +13,7 @@ specifiers:
   vite: ^3.2.3
 
 dependencies:
+  sudoku-solver-js: 0.1.4
   sudoku-umd: 1.0.1
 
 devDependencies:
@@ -737,6 +739,10 @@ packages:
     dependencies:
       min-indent: 1.0.1
     dev: true
+
+  /sudoku-solver-js/0.1.4:
+    resolution: {integrity: sha512-KdxMYfz2M4Y/VNOPHHGuyD40VpYnj89NSonNYzQNDxl6zz9CfGbTI7eVAINEB1mvN+zp5G1+78yHlPmDWZUaCA==}
+    dev: false
 
   /sudoku-umd/1.0.1:
     resolution: {integrity: sha512-LnvC4MA54EXRSEiwIs7I+4orht02nFAUgjorPe3vaCZY5I+t13s/xarqu5yoB2z6V3heZ9zV6eaxtSQlGtnQ/g==}

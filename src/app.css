@@ -9,3 +9,39 @@ body {
   background-color: darksalmon;
 }
 
+.hint-1 {
+  top: 0;
+  left: 0;
+}
+.hint-2 {
+  top: 21.25%;
+  left: 0;
+}
+.hint-3 {
+  top: 42.5%;
+  left: 0;
+}
+.hint-4 {
+  top: 63.75%;
+  left: 0;
+}
+.hint-5 {
+  top: 85%;
+  left: 0;
+}
+.hint-6 {
+  top: 0;
+  left: 90%;
+}
+.hint-7 {
+  top: 25%;
+  left: 90%;
+}
+.hint-8 {
+  top: 50%;
+  left: 90%;
+}
+.hint-9 {
+  top: 75%;
+  left: 90%;
+}

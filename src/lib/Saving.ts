@@ -8,18 +8,19 @@ export function save(grid: Grid) {
   a.download = "sudoku-save.json";
   a.click();
 }
-export function readGridFromFile(f: File): Promise<string[][] | null> {
+export function readGridFromFile(f?: File): Promise<string[][] | null> {
   return new Promise(res => {
     let reader = new FileReader();
     reader.onload = e => {
       try {
-        //@ts-expect-error
-        const json = JSON.parse(e.target.result);
-        res(json)
+        if (typeof e.target?.result === "string")
+          res(JSON.parse(e.target.result))
+        else
+          res(null)
       } catch (error) {
         res(null)
       }
     };
-    reader.readAsText(f);
+    f ? reader.readAsText(f) : f;
   })
 }
